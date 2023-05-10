@@ -1,9 +1,12 @@
+import sys
+sys.path.append('../models')
+sys.path.append('../Project')
 import tkinter as tk
 import ttkbootstrap as ttk
 import tkinter.filedialog as fd
 from sqlalchemy.orm import Session
-from ..models.dimension import Dimension
-from ..models.element import ElementId
+from Project.models.dimension import Dimension
+from Project.models.element import ElementId
 
 
 class NewElementDialog:
